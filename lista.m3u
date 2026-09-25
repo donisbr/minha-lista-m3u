@@ -2,20 +2,6 @@
 
 ############################################################################ Informações 
 
-#EXTINF:-1 tvg-id="novidades" tvg-name="ManoTV" tvg-logo="https://i.imgur.com/gWFKpfr.png" group-title="ManoTV" tvg-chno="1",CANAL DO USUÁRIO HD
-https://abre.ai/canaldoclientev8mp4
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/xDq65tu.png" group-title="DOAÇÃO PIX" tvg-chno="2",75 991634025
-https://abre.ai/canaldoarmp4
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/0AVLnGG.png" group-title="QUER UM TEST CHAMA" tvg-chno="3",Whats 75991634025
-https://abre.ai/canaldocliente7mp4
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/C09Ybxn.png" group-title="ATUALIZADO" tvg-chno="4",21/09/26
-https://abre.ai/canaldoclientev9mp4
-
-############################################################################ Canais | ABERTO
-
 #EXTINF:-1 tvg-id="Globorj.br" tvg-name="Globorj.br" tvg-logo="https://i.imgur.com/waZJG1M.png" group-title="Canais | GLOBO",Globo RJ HD
 http://gerenciar.vivatele.com/viva_padrao/viva2384/1
 
