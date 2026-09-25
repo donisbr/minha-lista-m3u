@@ -6,7 +6,12 @@ OUTPUT = "lista.m3u"
 REMOVE = [
     "novelas",
     "pluto tv",
-]
+     "MANOTV TVG-CHNO=1",
+     "QUER UM TEST CHAMA" tvg-chno="3",Whats 75991634025",
+      "DOAÇÃO PIX" tvg-chno="2",75 991634025",
+       "ATUALIZADO" tvg-chno="4",21/09/26",
+        "pluto tv",
+] 
 
 r = requests.get(SOURCE, timeout=60)
 r.raise_for_status()
