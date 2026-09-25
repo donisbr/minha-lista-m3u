@@ -11,6 +11,7 @@ REMOVE = [
     "quer um test chama",
     "doação pix",
     "atualizado",
+    "ALL",
 ]
 
 r = requests.get(SOURCE, timeout=60)
