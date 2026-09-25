@@ -1,4 +1,4 @@
-name: Atualizar lista M3U8
+name: Atualizar lista M3U
 
 on:
   schedule:
