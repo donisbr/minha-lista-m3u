@@ -399,9 +399,6 @@ https://cdn.live.br1.jmvstream.com/webtv/txsneccr/playlist/playlist.m3u8
 ############################################################################  REPRISE
 
 
-#EXTINF:-1 tvg-id="FUEL TV" tvg-name="FUEL TV" tvg-logo="https://images.pluto.tv/channels/6144d088516ea8000739076a/colorLogoPNG.png" group-title="Canais | ESPORTES",FUEL TV
-https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01074-fueltv-fueltvbr-samsungbr/playlist.m3u8
-
 #EXTINF:-1 tvg-logo="https://i.imgur.com/uoPNiM1.png" group-title="Canais | ESPORTES",Woohoo
 http://gerenciar.vivatele.com/viva_padrao/viva2384/73 
 
@@ -500,15 +497,6 @@ https://011news.akamaized.net/011news/011news/chunklist_480p.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.imgur.com/MGNoiZW.png" group-title="Canais | NOTÍCIAS", 011 News HD
 https://011news.akamaized.net/011news/011news/playlist.m3u8
-
-#EXTINF:-1 tvg-id="RECORD NEWS" tvg-name="RECORD NEWS" tvg-logo="https://images.pluto.tv/channels/6102e04e9ab1db0007a980a1/colorLogoPNG.png" group-title="Canais | NOTÍCIAS",Record News HD
-https://stream.ads.ottera.tv/playlist.m3u8?network_id=5431&avod=1&coppa=0&is_lat=0&dnt=0&us_privacy=1YN-&did=9794a1b041ad875093e398bc1632460a&app_bundle=com.ammo.runtime&app_store_url=https%3A%2F%2Fwww.runtime.tv%2Fdevices&app_domain=runtime.tv&app_name=runtime&custom_targeting=web&custom_4=internal&h=720&w=1280&content_channel=runtime&content_dist_name=internal&device_make=&device_model=&preferred_language=EN&consent=1&gdpr=0&custom_12=0&custom_15=pt-br&custom_16=EN&custom_17=en&site_page=https%253A%252F%252Fwww.runtime.tv%252F&gender=not_specified&yob=0&livestream=1&custom_param_0=&custom_param_1=handset&custom_param_2=&custom_param_3=&custom_param_4=internal&custom_param_5=web&custom_param_6=South%2520America&timestamp=1688604990&id=11709&ip=138.185.238.172&override_expiration=1500&sign=z%2BA66gwNz60ZptKvp8RUzKwjztJdlXb4BFuJDdDAARg%3D
-
-#EXTINF:-1 tvg-logo="https://images.pluto.tv/channels/6102e04e9ab1db0007a980a1/colorLogoPNG.png" group-title="Canais | NOTÍCIAS",Record News
-https://rnw-rn-samsungtvplus.otteravision.com/rnw/rn/rnw_rn.m3u8
-
-#EXTINF:-1 tvg-logo="https://images.pluto.tv/channels/6102e04e9ab1db0007a980a1/colorLogoPNG.png" group-title="Canais | NOTÍCIAS",Record News
-https://jmp2.uk/plu-6102e04e9ab1db0007a980a1.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.imgur.com/TlqB0Uo.png" group-title="Canais | NOTÍCIAS",TV Câmera HD
 https://stream3.camara.gov.br/tv1/manifest.m3u8?ManoTV
@@ -625,10 +613,6 @@ http://138.204.86.4:8080/ANIMAL_PLANET_HD/index.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/QwPiPlI.png" group-title="Canais | VARIEDADES",Rakuten Documentários | português e inglês
 https://rt-rtd.rttv.com/live/rtdoc/playlist.m3u8
 
-#EXTINF:-1 tvg-logo="https://images.pluto.tv/channels/63eba66da8b2270008436b10/colorLogoPNG.png" group-title="Canais | VARIEDADES",World Poker Tour
-https://dfr80qz435crc.cloudfront.net/ABCD/Amagi/WPT/World_Poker_Tour_BR/World_Poker_Tour.m3u8
-
-
 #EXTINF:-1 tvg-logo="https://i.imgur.com/g9AtH3s.png" group-title="Canais | VARIEDADES",Curta!
 
 
@@ -640,9 +624,6 @@ https://cc-4e6doav3fdfaw.akamaized.net/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.imgur.com/yEvzTGK.png" group-title="Canais | VARIEDADES",Viajando pelo Brasil 
 http://video01.soultv.com.br/viajandopelobrasil/viajandopelobrasil/playlist.m3u8?ManoTV
-
-#EXTINF:-1 tvg-logo="https://images.pluto.tv/channels/662156805a31f70013dba21c/colorLogoPNG.png" group-title="Canais | VARIEDADES",DiaTV
-
 
 #EXTINF:-1 tvg-logo="https://i.imgur.com/BLTWN9D.png " group-title="Canais | VARIEDADES",Fit Dance 
 
@@ -658,12 +639,6 @@ https://mvg-mv-pt.otteravision.com/mvg/mv_pt/mv_pt.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.imgur.com/jlhvLJb.png" group-title="Canais | VARIEDADES",Motorvision |PT HD
 https://stream.ads.ottera.tv/playlist.m3u8?network_id=2182
-
-#EXTINF:-1 tvg-logo="https://images.pluto.tv/channels/65a6818c7bdc8d0008457b21/colorLogoPNG.png" group-title="Canais | VARIEDADES",MAVTV Brasil
-
-
-#EXTINF:-1 tvg-logo="https://images.pluto.tv/channels/66296e755a402e00086a2c47/colorLogoPNG.png" group-title="Canais | VARIEDADES",Cultne TV
-https://cc-wn1j3f2wnu5lr.akamaized.net/manifest.m3u8
 
 #EXTINF:-1 tvg-logo="https://imgur.com/2qWdToI.png" group-title="Canais | VARIEDADES",SONY ONE SHARK TANK
 https://f9387554367349db8374885adb2d48cf.mediatailor.us-east-1.amazonaws.com/v1/master/0fb304b2320b25f067414d481a779b77db81760d/Samsung-br_SharkTank/playlist.m3u8
@@ -980,30 +955,11 @@ https://stream.ads.ottera.tv/playlist.m3u8?network_id=4864
 
 ############################################################################ Pluto TV | FILMES 
 
-#EXTINF:-1 tvg-logo="https://images.pluto.tv/channels/620d1512c7986a0007220213/colorLogoPNG.png" group-title="Pluto | MISTÉRIOS E SOBRENATURAL",Assombrações
-https://jmp2.uk/plu-620d1512c7986a0007220213.m3u8
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/3TlNQcz.png" group-title="Pluto | MISTÉRIOS E SOBRENATURAL",Estado Paranormal
-https://jmp2.uk/plu-656e2a81954b020008ed17a4.m3u8
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/63hgt4q.png" group-title="Pluto | MISTÉRIOS E SOBRENATURAL",Caçadores de Ovnis
-https://jmp2.uk/plu-656e2a10954b020008ed167c.m3u8
-
-############################################################################ Pluto TV | INVESTIGAÇÃO 
-
 #EXTINF:-1 tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBD1000002HF_20230809T053511SQUARE.png_20230809053512.png" group-title="Canais | ESPORTES",FIFA+
 https://jmp2.uk/plu-66997e8d3a4ad20008e50be9.m3u8
 
 #EXTINF:-1 tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBD1000002HF_20230809T053511SQUARE.png_20230809053512.png" group-title="Canais | ESPORTES",FIFA PLUS
 https://e834459f.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/U2Ftc3VuZy1icl9GSUZBUGx1c1BvcnR1Z3Vlc2VfSExT/playlist.m3u8
-
-#EXTINF:-1 tvg-logo="https://images.pluto.tv/channels/5f5141c1605ddf000748eb1b/colorLogoPNG.png" group-title="Canais | COMÉDIA",FailArmy
-https://jmp2.uk/plu-5f5141c1605ddf000748eb1b.m3u8
-
-#EXTINF:-1 tvg-logo="https://images.pluto.tv/channels/5f515ebac01c0f00080e8439/colorLogoPNG.png" group-title="Canais | COMÉDIA",The Pet Collective
-https://jmp2.uk/plu-5f515ebac01c0f00080e8439.m3u8
-
-############################################################################ PLUTO TV | ESTILO DE VIDA 
 
 #EXTINF:-1 tvg-id="Tastemade Brasil" tvg-logo="https://i.imgur.com/zXEQYgi.png" group-title="Canais | VARIEDADES",Tastemade Brasil
 https://jmp2.uk/plu-5fd1419a3b4f4b000773ba85.m3u8
@@ -1015,31 +971,6 @@ https://jmp2.uk/plu-68b88821e542386ab0bf5bef.m3u8
 https://jmp2.uk/plu-68b8875777201ec428d9eaa5.m3u8
 
 ############################################################################ Pluto TV | ANIMES & GEEK
-
-#EXTINF:-1 tvg-logo="https://imgur.com/wE5uBK7.png" group-title="Canais | MÚSICA",MaisUm
-https://stream.ichibantv.com:3230/hybrid/play.m3u8
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/39jD05N.png" group-title="Canais | MÚSICA",Music Top
-
-
-#EXTINF:-1 tvg-logo="https://imgur.com/yi81Qe0.png" group-title="Canais | MÚSICA",Canal 019 
-https://stmv1.srvstm.com/bruno4723/bruno4723/playlist.m3u8
-
-#EXTINF:-1 tvg-logo="https://imgur.com/yF42kfj.png" group-title="Canais | MÚSICA",POP PEGAJOSO
-
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/8uXwaqs.png" group-title="Canais | MÚSICA",Kiss TV
-https://isaocorp.cloudecast.com/kisstv/index.m3u8
- 
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/47oBUBM.png" group-title="Canais | MÚSICA",Gospel Music TV
-https://stmv1.srvif.com/gmusic/gmusic/playlist.m3u8
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/BatygW5.png" group-title="Canais | MÚSICA",Hip Hop Vai Alem da TV
-https://stmv4.voxtvhd.com.br/carlosdavi6787/carlosdavi6787/playlist.m3u8
-
-
-############################################################################ RÁDIOS 
 
 #EXTINF:-1  tvg-logo="https://i.imgur.com/BNyxPr8.png" group-title="RÁDIO",Pagode 
 https://hls.hunter.fm/pagode/64.m3u8?shtl=rLegrEjjYDLNiSScageIw8HO.tFEvhucVcOviAxNp1EnuCrAm7v1GpVOQdCA6q2VZ0CA
@@ -1094,9 +1025,6 @@ https://servidor25-2.brlogic.com:8024/live?type=.flv
 
 #EXTINF:-1 tvg-logo="https://imgur.com/Ns3uV8S.png" group-title="RÁDIO",Energia 97
 https://streaming.inweb.com.br/energia
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/UiNMxT2.png" group-title="RÁDIO",Gospel Internacional
-https://stream.vagalume.fm/hls/1470245767122628/aac.m3u8
 
 #EXTINF:-1 tvg-logo="https://imgur.com/OpAKbxr.png" group-title="RÁDIO",Rádio Salvador FM 
 https://streaming.livespanel.com:9230/ssafm9230?type=.flv
@@ -1189,9 +1117,6 @@ https://gerenciar.vivatele.com:443/viva_padrao/viva2384/79
 
 #EXTINF:-1 tvg-id="Cultura" tvg-name="Cultura" tvg-logo="https://i.imgur.com/Ak037l4.png" group-title="Canais | ABERTO",TV Gazeta BA SD
 https://tv.nuvemplay.live/hls/40gtv/stream.m3u8
-
-#EXTINF:-1 tvg-logo="https://images.pluto.tv/channels/62e010e6cd663f0007e57dc8/colorLogoPNG.png" group-title="Canais | ABERTO",TV Cultura 
-https://jmp2.uk/plu-62e010e6cd663f0007e57dc8.m3u8
 
 #EXTINF:-1 tvg-id="Cultura" tvg-name="Cultura" tvg-logo="https://i.imgur.com/xL9QvHp.png" group-title="Canais | ABERTO",TV Cultura Brasil 
 https://player-tvcultura.stream.uol.com.br/live/tvcultura.m3u8
@@ -1430,9 +1355,6 @@ https://isaocorp.cloudecast.com/astraltv/index.m3u8
 #EXTINF:-1 tvg-logo="https://imgur.com/ShOT5Xg.png" group-title="Canais | ABERTO",Rede UTV
 https://utvcdn.acessaradios.com.br/utvcdn/utvcdn.stream/playlist.m3u8
 
-#EXTINF:-1 tvg-logo="https://imgur.com/ZV8L3gl.png" group-title="Canais | ABERTO",Cultura Internacional 
-https://oj7lng29dg82-hls-live.5centscdn.com/lives/f7b44cfafd5c52223d5498196c8a2e7b.sdp/playlist.m3u8
-
 #EXTINF:-1 tvg-logo="https://imgur.com/qUiPZiw.png" group-title="Canais | ABERTO",Caravana Play
 https://stmv2.voxtvhd.com.br/keynni6990/keynni6990/playlist.m3u8
 
@@ -1546,9 +1468,6 @@ https://sistemavrt2023.vrtchannel.tv.br:3626/hybrid/play.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.imgur.com/2Wl6vWI.png" group-title="Canais | ABERTO",Tenda TV
 https://tv02.zas.media:1936/tendatv/tendatv/playlist.m3u8
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/UiNMxT2.png" group-title="Canais | ABERTO",Gospel Internacional
-https://stream.vagalume.fm/hls/1470245767122628/aac.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.imgur.com/47oBUBM.png" group-title="Canais | ABERTO",Gospel Music TV
 https://stmv1.srvif.com/gmusic/gmusic/playlist.m3u8
@@ -1764,170 +1683,6 @@ https://68882bdaf156a.streamlock.net/impd/ngrp:impd_all/chunklist_w1960836974_b8
 https://68882bdaf156a.streamlock.net/impd/ngrp:impd_all/chunklist_w1960836974_b1596000.m3u8
 
 ############################################################################ Canais | INTERNACIONAL
-
-#EXTINF:-1  tvg-logo="https://imgur.com/11aNWuU.png" group-title="Canais | INTERNACIONAL",Sic TV
- 
-
-#EXTINF:-1  tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/SIC-Alta-Definição.png" group-title="Canais | INTERNACIONAL",Sic Alta Definição
-https://production-fast-sic.content.okast.tv/fa2e8c4385712f9aa54bbe52b1bd9b6b/channels/d9070446-8448-455e-8075-773b1ba12562/fc831b20-f252-4e7d-8cc5-2d05f4d43c1c/media_.m3u8
-
-#EXTINF:-1  tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/SIC-Replay.png" group-title="Canais | INTERNACIONAL",Sic Replay
-https://production-fast-sic.content.okast.tv/fa2e8c4385712f9a7dce4ff2dcebac2e/channels/d9070446-8448-455e-8075-773b1ba12562/d47eae0f-ad77-414a-9a1d-2a6628ba18c3/media_.m3u8
-
-#EXTINF:-1  tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/SIC-Notícias.png" group-title="Canais | INTERNACIONAL",Sic Noticias
-https://cdnapisec.kaltura.com/p/4526593/sp/4526593/playManifest/entryId/1_j8ztwihx/deliveryProfileId/672/protocol/https/format/applehttp/a.m3u8
-
-#EXTINF:-1  tvg-logo="https://i.imgur.com/L3JiP7z.png" group-title="Canais | INTERNACIONAL",TVi HD
-https://github.com/LITUATUI/M3UPT/raw/main/M3U/TVI.m3u8
-
-#EXTINF:-1  tvg-logo="https://i.imgur.com/A1kgP2T.png" group-title="Canais | INTERNACIONAL",TVi Internacional
-
-
-#EXTINF:-1  tvg-logo="https://i.imgur.com/R1aU3Fd.png" group-title="Canais | INTERNACIONAL",V+ TVI
-
-
-#EXTINF:-1  tvg-logo="https://imgur.com/hbkDjva.png" group-title="Canais | INTERNACIONAL",TVi Realitys
-https://raw.githubusercontent.com/thomraider12/canaistvpt/main/m3u8s/tvireality.m3u8
-
-#EXTINF:-1  tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/TVI_África.png" group-title="Canais | INTERNACIONAL",TVi África
-
-
-#EXTINF:-1  tvg-logo="https://i.imgur.com/uH1Ez7T.png" group-title="Canais | INTERNACIONAL",Star Movies
-http://znty.dyndns.org:5010/hls/foxm.m3u8
-
-#EXTINF:-1  tvg-logo="https://i.imgur.com/RY7i7xr.png" group-title="Canais | INTERNACIONAL",Star Comedy
-http://znty.dyndns.org:5010/hls/foxcomedy.m3u8
-
-#EXTINF:-1  tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/AXN_logo_%282015%29.svg/960px-AXN_logo_%282015%29.svg.png" group-title="Canais | INTERNACIONAL",AXN
-http://znty.dyndns.org:5010/hls/axn.m3u8
-
-#EXTINF:-1  tvg-logo="https://i.imgur.com/tJQckal.png" group-title="Canais | INTERNACIONAL",AXN Movies
-http://50.7.120.34:8080/AXN_BLACK/index.m3u8
-
-#EXTINF:-1  tvg-logo="https://i.imgur.com/LJ6CKPH.png" group-title="Canais | INTERNACIONAL",Disney Channel Pt
-http://151.80.18.177:86/Disney_Channel_HD/index.m3u8
-
-#EXTINF:-1  tvg-logo="https://i.imgur.com/SFD8CBh.png" group-title="Canais | INTERNACIONAL",TV Zimbo
-https://sgn-cdn-video.vods2africa.com/Tv-Zimbo/index.fmp4.m3u8
-
-#EXTINF:-1  tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Telesur.png" group-title="Canais | INTERNACIONAL",teleSUR
-https://mblesmain01.telesur.ultrabase.net/mbliveMain/hd/playlist.m3u8 
-
-
-#EXTINF:-1  tvg-logo="https://is5-ssl.mzstatic.com/image/thumb/Purple115/v4/75/89/64/7589640f-38b9-cf6f-0963-1980ee7758a1/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/230x0w.webp" group-title="Canais | INTERNACIONAL",Demand Africa HD
-https://demandafrica-por-samsungbr.amagi.tv/playlist.m3u8
-
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Porto-Canal.png " group-title="Canais | INTERNACIONAL",Porto Canal
-https://pull-live-156-1.global.ssl.fastly.net/pc5865dc25400thmb-ea6bf03b14fa318f7133/pc1-jhrgyuoqe5865db-68tkgb14fa318f7133f03.smil/playlist.m3u8
-
-#EXTINF:-1 tvg-logo="https://imgur.com/rmmvWsX.png " group-title="Canais | INTERNACIONAL",Las Estrellas
-https://channel01-onlymex.akamaized.net/hls/live/2022749/event01/index_6.m3u8
-
-#EXTINF:-1  tvg-logo="https://i.imgur.com/AntrFrv.png" group-title="Canais | INTERNACIONAL",RTP 1
-http://50.7.120.34:8080/RTP_1/index.m3u8
-
-#EXTINF:-1  tvg-logo="https://imgur.com/AntrFrv.png" group-title="Canais | INTERNACIONAL",RTP2
-
-
-#EXTINF:-1  tvg-logo="https://i.imgur.com/DHy9SHz.png" group-title="Canais | INTERNACIONAL",RTP Notícias 
-https://streaming-live.rtp.pt/livetvhlsDVR/rtpnHDdvr.smil/playlist.m3u8
-
-#EXTINF:-1 tvg-logo="https://assimeportugal.com/wp-content/uploads/2020/10/lg-assim-01.png" group-title="Canais | INTERNACIONAL",Assim é Portugal | Brasil
-https://video04.logicahost.com.br/assimeportugal/assimeportugal/playlist.m3u8
-
-#EXTINF:-1 tvg-logo="https://imgur.com/bc6tYVZ.png" group-title="Canais | INTERNACIONAL",CNN Portugal
-https://github.com/LITUATUI/M3UPT/raw/main/M3U/CNN_Portugal.m3u8
-
-#EXTINF:-1  tvg-logo="https://i.imgur.com/05S3yYZ.png" group-title="Canais | INTERNACIONAL",CNN International
-https://d3bp6dwmpbdajl.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-ury0meh5m4nzm/index.m3u8
-
-#EXTINF:-1  tvg-logo="https://i.imgur.com/IUVRm5L.png" group-title="Canais | INTERNACIONAL",24 horas internacional
-
-
-#EXTINF:-1 tvg-id="SPORTTV 1" tvg-name="SPORTTV 1" tvg-logo="https://epg.pw/media/images/channel/2022/05/06/large/20220506174121279237_85.png" group-title="Canais | INTERNACIONAL",SportTV 1 HD
-
-
-#EXTINF:-1 tvg-id="SPORTTV 1" tvg-name="SPORTTV 1" tvg-logo="https://epg.pw/media/images/channel/2022/05/06/large/20220506174121279237_85.png" group-title="Canais | INTERNACIONAL",SportTV 1 FHD
-http://dns.explouddev.com:80/632270679/F823j7133R/111995
-
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/channel/2022/05/06/large/20220506173806585584_23.png" group-title="Canais | INTERNACIONAL",SportTV 2 HD
-
-
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/channel/2022/05/06/large/20220506173806585584_23.png" group-title="Canais | INTERNACIONAL",SportTV 2 FHD
-http://dns.explouddev.com:80/632270679/F823j7133R/111998
-
-#EXTINF:-1 tvg-logo="https://imgur.com/QuDzhTi.png" group-title="Canais | INTERNACIONAL",SportTV 3 HD
-http://dns.explouddev.com:80/632270679/F823j7133R/112000
-
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/channel/2022/05/06/large/20220506174832271533_58.png" group-title="Canais | INTERNACIONAL",SportTV 4 HD
-http://dns.explouddev.com:80/632270679/F823j7133R/112002
-
-#EXTINF:-1 tvg-logo="https://imgur.com/tS7t12k.png" group-title="Canais | INTERNACIONAL",SportTV 5 HD
-http://dns.explouddev.com:80/632270679/F823j7133R/112004
-
-
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/channel/2024/03/09/large/20240309021436743554_65.png" group-title="Canais | INTERNACIONAL",Eleven sports 1 HD
-http://94.130.32.19:8080/dazn1/index.m3u8
-
-#EXTINF:-1 tvg-logo="https://epg.pw/media/images/channel/2024/03/09/large/20240309021516356083_65.jpg" group-title="Canais | INTERNACIONAL",Eleven sports 2 HD
-http://94.130.32.19:8080/dazn2/index.m3u8
-
-#EXTINF:-1 tvg-logo="https://imgur.com/TvV6DtG.png" group-title="Canais | INTERNACIONAL",Eleven sports 3 HD
-http://94.130.32.19:8080/dazn3/index.m3u8
-
-#EXTINF:-1 tvg-logo="https://imgur.com/P0QLHvF.png" group-title="Canais | INTERNACIONAL",Eleven sports 4 HD
-http://94.130.32.19:8080/dazn4/index.m3u8
-
-#EXTINF:-1 tvg-logo="https://imgur.com/NQ3Zpxi.png" group-title="Canais | INTERNACIONAL",Eleven sports 5 HD
-
-
-#EXTINF:-1 tvg-logo="https://imgur.com/FdSRwfr.png" group-title="Canais | INTERNACIONAL",Eleven sports 6 HD
-
-
-#EXTINF:-1 tvg-logo="https://imgur.com/FdSRwfr.png" group-title="Canais | INTERNACIONAL",Eleven sports 6 FHD
-
-
-#EXTINF:-1 tvg-logo="https://imgur.com/BCciK8b.png" group-title="Canais | INTERNACIONAL",CANAL 11
-
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/jhFxUc1.png" group-title="Canais | INTERNACIONAL",TV5 Mond
-https://ott.tv5monde.com/Content/HLS/Live/channel(info)/index.m3u8
-
-#EXTINF:-1 tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBD3600001Q1_20240611T061844SQUARE.png" group-title="Canais | INTERNACIONAL",LA LIGA
-https://d3bb58xoj568xi.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-don7i7nmbho0q/index.m3u8?ads.device_did=%7BPSID%7D&ads.device_dnt=%7BTARGETOPT%7D&ads.app_domain=%7BAPP_DOMAIN%7D&ads.app_name=%7BAPP_NAME%7D&ads.consent=%7BTC_STRING%7D&ads.ssai_vendor=SSSLIVE&ads.service_id=ESBD3600001Q1
-
-#EXTINF:-1 tvg-logo="https://seo.tv.bo/LOGOS/LOGO_SEO_TV_DEPORTES_HD.png" group-title="Canais | INTERNACIONAL",SEO TV Deportes 1
-
-
-#EXTINF:-1 tvg-logo="https://seo.tv.bo/LOGOS/LOGO_SEO_TV_DEPORTES_HD.png" group-title="Canais | INTERNACIONAL",SEO TV Deportes 2
-
-
-#EXTINF:-1 tvg-logo="https://provider-static.plex.tv/epg/cms/production/ec2b06ac-61e3-4707-a17b-562d69044a5c/euronews_portuguese_logo.png" group-title="Canais | INTERNACIONAL",Euronews | Rakuten
-https://rakuten-euronews-8-pt.samsung.wurl.com/manifest/playlist.m3u8
-
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Fox_News_Channel_logo.svg/512px-Fox_News_Channel_logo.svg.png" group-title="Canais | INTERNACIONAL",FOX News
-
-
-#EXTINF:-1 tvg-logo="https://tvpmlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/70/01/97/USBA300024TN20200730102745.png" group-title="Canais | INTERNACIONAL",FOX News NOW | EUA
-https://cdn-ue1-prod.tsv2.amagi.tv/linear/samsungus-fox-newsnow-samsung/playlist.m3u8
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/1JnyzHv.png" group-title="Canais | INTERNACIONAL",FOX News NOW | EUA 
-
-
-#EXTINF:-1 tvg-logo="https://imgur.com/9J47rsV.png" group-title="Canais | INTERNACIONAL",Sony Canal Comedias
-
- 
-#EXTINF:-1 tvg-logo="https://imgur.com/VhU32Jw.png" group-title="Canais | INTERNACIONAL",COMBATE GLOBAL
-https://stream.ads.ottera.tv/playlist.m3u8?network_id=960
-
-#EXTINF:-1 tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBA1400008NE_20220713T034534SQUARE.png_20220713034534.png" group-title="Canais | INTERNACIONAL",¡Hola! Play
-https://022d66c197dd4a1e9008e0134a74f34e.mediatailor.us-east-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/Samsung-es_HolaPlay/playlist.m3u8?ads.wurl_channel=790&ads.wurl_name=HolaPlay&ads.coppa=0&ads.psid=%7BPSID%7D&ads.targetopt=%7BTARGETOPT%7D&ads.app_domain=%7BAPP_DOMAIN%7D&ads.app_name=%7BAPP_NAME%7D&ads.consent=%7BTC_STRING%7D
-
-#EXTINF:-1 tvg-logo="https://www.cxtv.com.br/img/Tvs/Logo/webp-l/cf0b09469b863ba943590967bc25b9ed.webp" group-title="Canais | INTERNACIONAL",LAS ESTRELLAS (MX)
-https://channel01-onlymex.akamaized.net/hls/live/2022749/event01/index_1.m3u8
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/pMo2FPJ.png" group-title="Canais | INTERNACIONAL",WWE Youtube 
-
 
 #EXTINF:-1 tvg-logo="https://imgur.com/UTSMpfP.png" group-title="Canais | LUTAS",LUCHA LIBRE
 
@@ -2250,32 +2005,6 @@ http://shd13.oneplayer.site/SHD13/247732/1x9.mp4
 http://shd13.oneplayer.site/SHD13/247732/1x10.mp4
 
 ################################################################# Os Runarounds: Música e Sonhos S01
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/0GC0QSy.png" group-title="Série | MÚSICA E SONHOS S01",S01 E01
-http://shd13.oneplayer.site/SHD13/248833/1x1.mp4
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/0GC0QSy.png" group-title="Série | MÚSICA E SONHOS S01",S01 E02
-http://shd13.oneplayer.site/SHD13/248833/1x2.mp4
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/0GC0QSy.png" group-title="Série | MÚSICA E SONHOS S01",S01 E03
-http://shd13.oneplayer.site/SHD13/248833/1x3.mp4
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/0GC0QSy.png" group-title="Série | MÚSICA E SONHOS S01",S01 E04
-http://shd13.oneplayer.site/SHD13/248833/1x4.mp4
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/0GC0QSy.png" group-title="Série | MÚSICA E SONHOS S01",S01 E05
-http://shd13.oneplayer.site/SHD13/248833/1x5.mp4
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/0GC0QSy.png" group-title="Série | MÚSICA E SONHOS S01",S01 E06
-http://shd13.oneplayer.site/SHD13/248833/1x6.mp4
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/0GC0QSy.png" group-title="Série | MÚSICA E SONHOS S01",S01 E07
-http://shd13.oneplayer.site/SHD13/248833/1x7.mp4
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/0GC0QSy.png" group-title="Série | MÚSICA E SONHOS S01",S01 E08
-http://shd13.oneplayer.site/SHD13/248833/1x8.mp4
-
-############################################################################ TRAPPED S01
 
 #EXTINF:-1 tvg-logo="https://i.imgur.com/lNAgbnl.png" group-title="Série | TRAPPED S01",S01 E01
 http://shd2.oneplayer.site/5yu456y45tge4rtfg4w3ertf34t43retg54y65uj65npw/SHD2/64852/1x1.mp4
