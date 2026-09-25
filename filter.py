@@ -12,6 +12,12 @@ REMOVE = [
     "doação pix",
     "atualizado",
     "hallo",
+    "MÚSICA",
+    "RÁDIOS",
+    "PLUTO",
+    "INTERNACIONAL",
+    "NOVELAS TURCA",
+    "MÚSICA",
 ]
 
 r = requests.get(SOURCE, timeout=60)
