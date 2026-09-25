@@ -6,12 +6,12 @@ OUTPUT = "lista.m3u"
 REMOVE = [
     "novelas",
     "pluto tv",
-     "Informações",
-    "QUER UM TEST CHAMA",
-    "DOAÇÃO PIX",
-    "ATUALIZADO",
-        "pluto tv",
-] 
+    "pluto series",
+    "manotv",
+    "quer um test chama",
+    "doação pix",
+    "atualizado",
+]
 
 r = requests.get(SOURCE, timeout=60)
 r.raise_for_status()
@@ -22,22 +22,32 @@ result = []
 skip = False
 
 for line in lines:
+
+    # Identifica o início de um canal
     if line.startswith("#EXTINF:"):
-        channel_info = line.lower()
-        skip = any(term in channel_info for term in REMOVE)
+
+        # Converte para minúsculas para facilitar a comparação
+        info = line.lower()
+
+        # Verifica se algum termo proibido aparece na linha inteira
+        skip = any(term in info for term in REMOVE)
 
         if not skip:
             result.append(line)
 
-    elif line.startswith("http://") or line.startswith("https://"):
+    # URL pertencente ao canal anterior
+    elif line.startswith(("http://", "https://")):
+
         if not skip:
             result.append(line)
 
+    # Outras linhas da M3U
     else:
+
         if not skip:
             result.append(line)
 
 with open(OUTPUT, "w", encoding="utf-8") as f:
     f.write("\n".join(result) + "\n")
 
-print("Lista atualizada.")
+print("Lista atualizada com sucesso.")
