@@ -972,98 +972,6 @@ https://jmp2.uk/plu-68b8875777201ec428d9eaa5.m3u8
 
 ############################################################################ Pluto TV | ANIMES & GEEK
 
-#EXTINF:-1  tvg-logo="https://i.imgur.com/BNyxPr8.png" group-title="RÁDIO",Pagode 
-https://hls.hunter.fm/pagode/64.m3u8?shtl=rLegrEjjYDLNiSScageIw8HO.tFEvhucVcOviAxNp1EnuCrAm7v1GpVOQdCA6q2VZ0CA
-
-#EXTINF:-1  tvg-logo="https://i.imgur.com/zIZlgsn.png" group-title="RÁDIO",Anos 80 retrô
-https://hls.hunter.fm/80s/64.m3u8?shtl=OR99PlKze7mgR_U1AF_NVQZ0.dLFtA%2FSwg6Gi%2Fh77nRQTbBFiELSZm%2BOueXvqQcHVqGs
-
-#EXTINF:-1  tvg-logo="https://i.imgur.com/I3pDcOW.png" group-title="RÁDIO",Sertanejo
-https://hls.hunter.fm/sertanejo/64.m3u8?shtl=rLegrEjjYDLNiSScageIw8HO.tFEvhucVcOviAxNp1EnuCrAm7v1GpVOQdCA6q2VZ0CA
-
-#EXTINF:-1  tvg-logo="https://i.imgur.com/q9qGILb.png" group-title="RÁDIO",Hits Brasil 
-https://hls.hunter.fm/hitsbrasil/64.m3u8?shtl=7KWu3SjMvgY-GhV1-8B6b9rB.lpykqpyxgqfSK4vGJSb3tqheOVp2UggEshcePVZJDVw
-
-#EXTINF:-1  tvg-logo="https://i.imgur.com/frAXSr8.png" group-title="RÁDIO",Pisadinha
-https://hls.hunter.fm/pisadinha/64.m3u8?shtl=rLegrEjjYDLNiSScageIw8HO.tFEvhucVcOviAxNp1EnuCrAm7v1GpVOQdCA6q2VZ0CA
-#EXTINF:-1  tvg-logo="https://i.imgur.com/MD1dcaA.png" group-title="RÁDIO",K-Pop
-https://stream.hunter.fm/kpop/64.m3u8
-
-#EXTINF:-1  tvg-logo="https://i.imgur.com/uq88JPV.png" group-title="RÁDIO",Pop
-https://hls.hunter.fm/pop/64.m3u8?shtl=OR99PlKze7mgR_U1AF_NVQZ0.dLFtA%2FSwg6Gi%2Fh77nRQTbBFiELSZm%2BOueXvqQcHVqGs
-
-#EXTINF:-1  tvg-logo="https://i.imgur.com/D2pbbPX.png" group-title="RÁDIO",Pop 2
-https://hls.hunter.fm/pop2k/64.m3u8?shtl=OR99PlKze7mgR_U1AF_NVQZ0.dLFtA%2FSwg6Gi%2Fh77nRQTbBFiELSZm%2BOueXvqQcHVqGs
-
-#EXTINF:-1  tvg-logo="https://i.imgur.com/spf0rU1.png" group-title="RÁDIO",Gospel
-https://hls.hunter.fm/gospel/64.m3u8?shtl=OR99PlKze7mgR_U1AF_NVQZ0.dLFtA%2FSwg6Gi%2Fh77nRQTbBFiELSZm%2BOueXvqQcHVqGs
-
-#EXTINF:-1  tvg-logo="https://i.imgur.com/eT8XaE3.png" group-title="RÁDIO",Moda Sertaneja
-https://hls.hunter.fm/modasertaneja/64.m3u8?shtl=OR99PlKze7mgR_U1AF_NVQZ0.dLFtA%2FSwg6Gi%2Fh77nRQTbBFiELSZm%2BOueXvqQcHVqGs
-
-#EXTINF:-1  tvg-logo="https://i.imgur.com/uoQafom.png" group-title="RÁDIO", Tropical 
-https://hls.hunter.fm/tropical/64.m3u8?shtl=OR99PlKze7mgR_U1AF_NVQZ0.dLFtA%2FSwg6Gi%2Fh77nRQTbBFiELSZm%2BOueXvqQcHVqGs
-
-#EXTINF:-1  tvg-logo="https://i.imgur.com/xAD9aHh.png" group-title="RÁDIO",Rock
-https://hls.hunter.fm/rock/64.m3u8?shtl=OR99PlKze7mgR_U1AF_NVQZ0.dLFtA%2FSwg6Gi%2Fh77nRQTbBFiELSZm%2BOueXvqQcHVqGs
-
-#EXTINF:-1  tvg-logo="https://i.imgur.com/zHMxF3o.png" group-title="RÁDIO",Iofi
-https://stream.hunter.fm/lofi/64.m3u8
-
-#EXTINF:-1  tvg-logo="https://i.imgur.com/UiNMxT2.png" group-title="RÁDIO",Rádio POP
-https://virtues.live:8254/stream?type=.flv
-
-#EXTINF:-1  tvg-logo="https://imgur.com/11DH4AQ.png" group-title="RÁDIO",ATIVIDADE FM 87.9 Canudos BA
-https://1.stmip.net:8070/stream?type=.flv
-
-#EXTINF:-1  tvg-logo="https://imgur.com/sxxaEKP.png" group-title="RÁDIO",JERE FM 106.9 JEREMOABO BA
-https://1.stmip.net:2044/stream?type=.flv
-
-#EXTINF:-1  tvg-logo="https://i.imgur.com/uUx9BKZ.png" group-title="RÁDIO",Euclides da Cunha FM
-https://servidor25-2.brlogic.com:8024/live?type=.flv
-
-
-#EXTINF:-1 tvg-logo="https://imgur.com/Ns3uV8S.png" group-title="RÁDIO",Energia 97
-https://streaming.inweb.com.br/energia
-
-#EXTINF:-1 tvg-logo="https://imgur.com/OpAKbxr.png" group-title="RÁDIO",Rádio Salvador FM 
-https://streaming.livespanel.com:9230/ssafm9230?type=.flv
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/gFE3Qih.png" group-title="RÁDIO",Antena 1
-https://antenaone.crossradio.com.br/stream/1
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/YREInDH.png" group-title="RÁDIO",Jovem Pan FM
-https://stream.zeno.fm/c45wbq2us3buv
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/YREInDH.png" group-title="RÁDIO",Jovem Pan News
-https://stream.zeno.fm/vlcraijc6yiuv
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/d2qdM76.png" group-title="RÁDIO",Brado Rádio 
-https://servidor17-5.brlogic.com:8300/live?source=links_page
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/h3CwbgQ.png" group-title="RÁDIO",Gavião FM 
-https://stm11.xcast.com.br:11000
-
-#EXTINF:-1 tvg-logo="https://imgur.com/YEV3p7r.png" group-title="RÁDIO",Rádio Muriaé Play
-https://stream.zeno.fm/d42wceognggtv.m3u3
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/hDsCVEY.png" group-title="RÁDIO",Web Rádio JP
-https://stream.zeno.fm/a7klgcfvvw9uv
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/UiNMxT2.png" group-title="RÁDIO",Rádio Cidade BA
-https://streaming.livespanel.com:20959/cidadefmlem
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/UiNMxT2.png" group-title="RÁDIO",Mix Bahia 
-https://8175.brasilstream.com.br/stream
-
-#EXTINF:-1  tvg-logo="https://i.imgur.com/ZsMysEn.png" group-title="RÁDIO",Web Rádio Lairton Teclas
-https://live20.bozztv.com/akamaissh101/ssh101/ltrecords/playlist.m3u8
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/5qYY7Hk.png" group-title="RÁDIO",Radio Onda Beat 
-https://www.quinsanbroadcast.com.br:8040/101FM_LITORAL?type=.flv
-
-############################################################################ Canais | ABERTOS
-
 #EXTINF:-1 tvg-logo="https://i.imgur.com/lm4HhaL.png" group-title="Canais | ABERTO",BDCTV - TV A Critica
 https://cr7v.short.gy/ManoTV/BDCTV/Index.m3u8
 
@@ -1133,12 +1041,6 @@ https://tv03.zas.media:1936/tvfuturo/tvfuturo/playlist.m3u8
 #EXTINF:-1 tvg-id="RadarTV" tvg-name="Radar TV" tvg-logo="https://raw.githubusercontent.com/althierestm/Radartvplayer/refs/heads/main/logo%20png%20RadarTV.png" group-title="Canais | ABERTO",Radar TV
 https://radartv.s.gy/radartvaovivo
 
-
-#EXTINF:-1  tvg-logo="https://i.imgur.com/ZsMysEn.png" group-title="Canais | ABERTO",Web Rádio Lairton Teclas
-https://live20.bozztv.com/akamaissh101/ssh101/ltrecords/playlist.m3u8
-
-
-############################################################################ TV ABERTA 
 
 #EXTINF:-1 tvg-logo="https://imgur.com/YXvSdlo.png" group-title="Canais | ABERTO",ESFLIX TV
 https://acesso.ecast.site:3186/live/esflixlive.m3u8
@@ -1697,40 +1599,6 @@ https://aym-cbtv.otteravision.com/aym/cbtv/cbtv_480p.m3u8
 
 
 ################################################################# NOVELAS TURCA S01
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/MU4p8Ys.png" group-title="Novela |  TURCA",Daha 17 EP01
-http://shd13.oneplayer.site/SHD13/317883/1x1LEG.mp4
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/MU4p8Ys.png" group-title="Novela |  TURCA",Daha 17 EP02
-http://shd13.oneplayer.site/SHD13/317883/1x2LEG.mp4
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/MU4p8Ys.png" group-title="Novela |  TURCA",Daha 17 EP03
-http://shd13.oneplayer.site/SHD13/317883/1x3LEG.mp4
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/MU4p8Ys.png" group-title="Novela |  TURCA",Daha 17 EP04
-http://shd13.oneplayer.site/SHD13/317883/1x4LEG.mp4
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/MU4p8Ys.png" group-title="Novela |  TURCA",Daha 17 EP05
-http://shd13.oneplayer.site/SHD13/317883/1x5LEG.mp4
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/MU4p8Ys.png" group-title="Novela |  TURCA",Daha 17 EP06
-http://shd13.oneplayer.site/SHD13/317883/1x6LEG.mp4
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/MU4p8Ys.png" group-title="Novela |  TURCA",Daha 17 EP07
-http://shd13.oneplayer.site/SHD13/317883/1x7LEG.mp4
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/MU4p8Ys.png" group-title="Novela |  TURCA",Daha 17 EP08
-http://shd13.oneplayer.site/SHD13/317883/1x8LEG.mp4
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/MU4p8Ys.png" group-title="Novela |  TURCA",Daha 17 EP09
-http://shd13.oneplayer.site/SHD13/317883/1x9LEG.mp4
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/MU4p8Ys.png" group-title="Novela |  TURCA",Daha 17 EP10
-http://shd13.oneplayer.site/SHD13/317883/1x10LEG.mp4
-
-
-
-############################################################################ Agente Kim: Reativado S01
 
 #EXTINF:-1 tvg-logo="https://i.imgur.com/Mp1t2mi.png" group-title="Série | AGENTE KIM REATIVADO  S01",S01 E01
 http://shd13.oneplayer.site/SHD13/296206/1x1.mp4
