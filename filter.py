@@ -6,7 +6,7 @@ OUTPUT = "lista.m3u"
 REMOVE = [
     "novelas",
     "pluto tv",
-     "MANOTV",
+     "Informações",
     "QUER UM TEST CHAMA",
     "DOAÇÃO PIX",
     "ATUALIZADO",
