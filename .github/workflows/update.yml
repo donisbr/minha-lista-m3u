@@ -27,10 +27,11 @@ jobs:
       - name: Filtrar lista
         run: python filter.py
 
-      - name: Salvar lista atualizada
+            - name: Salvar lista atualizada
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
           git add lista.m3u
           git diff --cached --quiet || git commit -m "Atualizar lista M3U"
+          git pull --rebase origin main
           git push
