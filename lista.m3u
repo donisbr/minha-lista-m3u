@@ -957,30 +957,6 @@ https://stmv2.voxtvhd.com.br/eroaldo/eroaldo/playlist.m3u8?hls_ctx=6w6o1x4w
 
 ############################################################################ Canais | HALLO!
 
-#EXTINF:-1 tvg-logo="https://i.imgur.com/BMV8Nbn.png" group-title="Canais | HALLO!",Hallo! Series
-https://cdn-5.nxplay.com.br/HALLOSERIES/index.m3u8?token=cdntv_62qwd7eSv1Ihnlni
-
-#EXTINF:-1 tvg-logo="https://imgur.com/lFkmVqX.png" group-title="Canais | HALLO!",Hallo! Doramas
-
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/Z8BnjPs.png" group-title="Canais | HALLO!",Hallo! Classic
-https://cdn-5.nxplay.com.br/HALLOCLASSIC/index.m3u8?token=cdntv_62qwd7eSv1Ihnlni
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/Q16ZNjl.png" group-title="Canais | HALLO!",Hallo! Movies
-https://cdn-5.nxplay.com.br/HALLOMOVIES/index.m3u8?token=cdntv_62qwd7eSv1Ihnlni
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/2HaiovZ.png" group-title="Canais | HALLO!",Hallo Anime HD²
-https://cdn-5.nxplay.com.br/HALLOANIME/index.m3u8?token=cdntv_62qwd7eSv1Ihnlni
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/lFkmVqX.png" group-title="Canais | HALLO!",Hallo! Doc.
-https://cdn-5.nxplay.com.br/HALLODOC/index.m3u8?token=cdntv_62qwd7eSv1Ihnlni
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/6hDnWxA.png" group-title="Canais | HALLO!",Hallo! Music
-https://cdn-5.nxplay.com.br/HALLOMUSIC/index.m3u8?token=cdntv_62qwd7eSv1Ihnlni
-
-
-############################################################################ CANAIS RUNTIME & PLUTO FILMES
-
 #EXTINF:-1 tvg-logo="https://imgur.com/3Wpaz9E.png" group-title="Runtime TV | FILMES",Runtime Ação HD
 https://stream.ads.ottera.tv/playlist.m3u8?network_id=2552
 
