@@ -4,6 +4,7 @@ SOURCE = "https://cr7v.short.gy/TV"
 OUTPUT = "lista.m3u"
 
 REMOVE = [
+ REMOVE = [
     "novelas",
     "pluto tv",
     "pluto series",
