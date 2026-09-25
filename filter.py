@@ -26,25 +26,39 @@ r.raise_for_status()
 lines = r.text.splitlines()
 
 result = []
-skip = False
+current_block = []
+remove_block = False
 
 for line in lines:
+
+    # Começou um novo canal
     if line.startswith("#EXTINF:"):
-        info = line.lower()
-        skip = any(term in info for term in REMOVE)
 
-        if not skip:
-            result.append(line)
+        # Salva o canal anterior somente se ele não estiver marcado para remoção
+        if current_block and not remove_block:
+            result.extend(current_block)
 
-    elif line.startswith(("http://", "https://")):
-        if not skip:
-            result.append(line)
+        # Começa o novo canal
+        current_block = [line]
+
+        # Analisa a linha inteira do EXTINF
+        info = line.casefold()
+
+        # Verifica os termos que devem ser removidos
+        remove_block = any(
+            termo.casefold() in info
+            for termo in REMOVE
+        )
 
     else:
-        if not skip:
-            result.append(line)
+        # Adiciona a URL e demais linhas ao canal atual
+        current_block.append(line)
+
+# Salva o último canal
+if current_block and not remove_block:
+    result.extend(current_block)
 
 with open(OUTPUT, "w", encoding="utf-8") as f:
     f.write("\n".join(result) + "\n")
 
-print("Lista atualizada com sucesso.")
+print(f"Lista atualizada: {len(result)} linhas.")
