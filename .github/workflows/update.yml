@@ -15,6 +15,8 @@ jobs:
     steps:
       - name: Baixar repositório
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Configurar Python
         uses: actions/setup-python@v5
@@ -27,11 +29,14 @@ jobs:
       - name: Filtrar lista
         run: python filter.py
 
-            - name: Salvar lista atualizada
+      - name: Salvar lista atualizada
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
           git add lista.m3u
-          git diff --cached --quiet || git commit -m "Atualizar lista M3U"
-          git pull --rebase origin main
-          git push
+          if git diff --cached --quiet; then
+            echo "Nenhuma alteração na lista."
+          else
+            git commit -m "Atualizar lista M3U"
+            git push origin HEAD:main
+          fi
