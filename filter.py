@@ -13,10 +13,10 @@ REMOVE = [
     "atualizado",
     "hallo",
     "MÚSICA",
-    "RÁDIOS",
+    "RÁDIO",
     "PLUTO",
     "INTERNACIONAL",
-    "NOVELAS TURCA",
+    "TURCA",
     "MÚSICA",
 ]
 
