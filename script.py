@@ -1,7 +1,7 @@
 import requests
 
 # URL real da sua lista fornecedora original (coloque o link completo da sua fonte aqui)
-SOURCE = "https://coloque_aqui_o_link_da_sua_fonte_original.m3u8"
+SOURCE = "https://cr7v.short.gy/TV"
 OUTPUT = "lista.m3u"
 
 # Termos para remover da lista de canais (sempre em letras minúsculas)
