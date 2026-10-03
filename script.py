@@ -1,55 +1,106 @@
 import requests
 
-# URL real da sua lista fornecedora original (coloque o link completo da sua fonte aqui)
-SOURCE = "https://cr7v.short.gy/TV"
-OUTPUT = "lista.m3u"
-
-# Termos para remover da lista de canais (sempre em letras minúsculas)
-REMOVE = [
+# 1. Configurações da Lista 1 (Canais)
+SOURCE_TV = "https://cr7v.short.gy/TV"
+REMOVE_TV = [
     "novelas", "pluto tv", "pluto series", "manotv", 
     "quer um test chama", "doação pix", "atualizado", 
     "hallo", "música", "rádios", "pluto", "internacional", "novelas turca"
 ]
 
+# 2. Configurações da Lista 2 (Apenas Filmes do seu Servidor Privado)
+# Montamos a URL usando o seu Link, Usuário e Senha fornecidos
+SOURCE_MOVIES = "http://jphdear.net"
+
+OUTPUT = "lista.m3u"
+
 headers = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
 }
 
-try:
-    print(f"Buscando lista de: {SOURCE}")
-    r = requests.get(SOURCE, headers=headers, timeout=60, allow_redirects=True)
-    r.raise_for_status()
-    lines = r.text.splitlines()
-except requests.exceptions.RequestException as e:
-    print(f"Erro ao baixar a lista: {e}")
-    exit(1)
-
 result = []
-skip = False
-
 # Cabeçalho limpo com links de guias de programação (EPG) reais
 EPG_LIMPO = '#EXTM3U url-tvg="https://githubusercontent.com"'
 result.append(EPG_LIMPO)
 
-for line in lines:
-    clean_line = line.strip()
-    if not clean_line or clean_line.startswith("#EXTM3U"):
-        continue
+# ==========================================
+# PARTE 1: PROCESSANDO OS CANAIS (LISTA 1)
+# ==========================================
+try:
+    print(f"Buscando canais de: {SOURCE_TV}")
+    r = requests.get(SOURCE_TV, headers=headers, timeout=60, allow_redirects=True)
+    r.raise_for_status()
+    lines_tv = r.text.splitlines()
+    
+    skip = False
+    for line in lines_tv:
+        clean_line = line.strip()
+        if not clean_line or clean_line.startswith("#EXTM3U"):
+            continue
 
-    if clean_line.startswith("#EXTINF:"):
-        info = clean_line.lower()
-        skip = any(term in info for term in REMOVE)
-        if not skip:
-            result.append(clean_line)
-    elif clean_line.startswith(("http://", "https://")):
-        if not skip:
-            result.append(clean_line)
-        skip = False
-    else:
-        if not skip and clean_line.startswith("#"):
-            result.append(clean_line)
+        if clean_line.startswith("#EXTINF:"):
+            info = clean_line.lower()
+            skip = any(term in info for term in REMOVE_TV)
+            if not skip:
+                result.append(clean_line)
+        elif clean_line.startswith(("http://", "https://")):
+            if not skip:
+                result.append(clean_line)
+            skip = False
+        else:
+            if not skip and clean_line.startswith("#"):
+                result.append(clean_line)
+                
+    print(f"Canais processados. Total parcial no arquivo: {len(result)}")
 
+except requests.exceptions.RequestException as e:
+    print(f"Erro ao baixar a lista de canais: {e}")
+    # Não encerra o programa se a primeira falhar, tenta buscar os filmes
+
+
+# ==========================================
+# PARTE 2: EXTRAINDO SÓ FILMES (LISTA 2)
+# ==========================================
+try:
+    print(f"Buscando filmes do servidor privado...")
+    r = requests.get(SOURCE_MOVIES, headers=headers, timeout=60, allow_redirects=True)
+    r.raise_for_status()
+    lines_movies = r.text.splitlines()
+    
+    keep_movie = False
+    movies_count = 0
+    
+    for line in lines_movies:
+        clean_line = line.strip()
+        if not clean_line or clean_line.startswith("#EXTM3U"):
+            continue
+            
+        if clean_line.startswith("#EXTINF:"):
+            # Analisa se pertence estritamente ao grupo de Filmes
+            # Filtra pela tag group-title="FILMES" baseada no arquivo fornecido
+            if 'group-title="filmes"' in clean_line.lower():
+                keep_movie = True
+                result.append(clean_line)
+                movies_count += 1
+            else:
+                keep_movie = False
+                
+        elif clean_line.startswith(("http://", "https://")):
+            if keep_movie:
+                result.append(clean_line)
+            keep_movie = False
+            
+    print(f"Filmes processados com sucesso! Foram adicionados {movies_count} filmes.")
+
+except requests.exceptions.RequestException as e:
+    print(f"Erro ao baixar a lista de filmes: {e}")
+
+
+# ==========================================
+# SALVAMENTO FINAL DO ARQUIVO UNIFICADO
+# ==========================================
 with open(OUTPUT, "w", encoding="utf-8") as f:
     f.write("\n".join(result) + "\n")
 
-print(f"Lista organizada com sucesso! Total de linhas salvas: {len(result)}")
+print(f"\nLista unificada gerada com sucesso!")
+print(f"Arquivo final salvo em: '{OUTPUT}' com um total de {len(result)} linhas.")
