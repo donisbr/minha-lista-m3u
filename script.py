@@ -8,14 +8,17 @@ REMOVE_TV = [
     "hallo", "música", "rádios", "pluto", "internacional", "novelas turca"
 ]
 
-# 2. Configurações da Lista 2 (Servidor Privado - Forçando apenas Filmes via API)
-# Testamos sem a porta :8080 e adicionamos '&type=movie' para o servidor entregar direto os filmes
-SOURCE_MOVIES = "http://jphdear.net"
+# 2. Configurações da Lista 2 (Servidor de Filmes - Autenticação Xtream Codes)
+# Separamos os dados para injetar corretamente na requisição do servidor
+SERVER_URL = "http://jphdear.net"
+USERNAME = "Eliop2"
+PASSWORD = "SmTg36371"
 
 OUTPUT = "lista.m3u"
 
+# User-Agent idêntico ao de um aplicativo de TV para o servidor não bloquear
 headers = {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+    "User-Agent": "Mozilla/5.0 (QtEmbedded; Linux; arm_64) AppleWebKit/537.36 (KHTML, like Gecko) IPTV/1.0.0"
 }
 
 result = []
@@ -57,47 +60,48 @@ except requests.exceptions.RequestException as e:
 
 
 # ==========================================
-# PARTE 2: EXTRAINDO OS FILMES (LISTA 2)
+# PARTE 2: AUTENTICANDO E EXTRAINDO OS FILMES
 # ==========================================
-try:
-    print(f"Buscando filmes do servidor privado...")
-    r = requests.get(SOURCE_MOVIES, headers=headers, timeout=60, allow_redirects=True)
-    r.raise_for_status()
-    lines_movies = r.text.splitlines()
+# Testamos as duas portas mais comuns de painéis IPTV caso a padrão falhe
+ports_to_try = [":80", ":8080", ""] 
+movies_downloaded = False
+
+for port in ports_to_try:
+    if movies_downloaded:
+        break
+        
+    # Monta a URL de API nativa do Xtream Codes para forçar apenas filmes (get.php)
+    api_url = f"{SERVER_URL}{port}/get.php?username={USERNAME}&password={PASSWORD}&action=get_vod_streams&output=mpegts"
     
-    keep_movie = False
-    movies_count = 0
-    
-    for line in lines_movies:
-        clean_line = line.strip()
-        if not clean_line or clean_line.startswith("#EXTM3U"):
-            continue
+    try:
+        print(f"Tentando autenticar no servidor de filmes usando a porta {port if port else 'padrão'}...")
+        r = requests.get(api_url, headers=headers, timeout=30, allow_redirects=True)
+        
+        # Se retornar 200 e houver conteúdo M3U válido ou links de vídeo
+        if r.status_code == 200 and ("#EXTINF" in r.text or "http" in r.text):
+            lines_movies = r.text.splitlines()
+            movies_count = 0
             
-        if clean_line.startswith("#EXTINF:"):
-            info_lower = clean_line.lower()
-            # Filtro inteligente: captura se tiver "group-title" contendo "film" ou se a API já trouxe filtrado
-            if 'group-title=' in info_lower:
-                if 'filme' in info_lower or 'film' in info_lower or 'movie' in info_lower:
-                    keep_movie = True
+            for line in lines_movies:
+                clean_line = line.strip()
+                if not clean_line or clean_line.startswith("#EXTM3U"):
+                    continue
+                
+                # Como a API 'get_vod_streams' só traz filmes, injetamos tudo direto sem precisar filtrar nomes
+                if clean_line.startswith("#EXTINF:"):
                     result.append(clean_line)
                     movies_count += 1
-                else:
-                    keep_movie = False
-            else:
-                # Se o servidor enviou sem a tag group-title (mas já filtrado por conta do type=movie)
-                keep_movie = True
-                result.append(clean_line)
-                movies_count += 1
-                
-        elif clean_line.startswith(("http://", "https://", "rtmp://")):
-            if keep_movie:
-                result.append(clean_line)
-            keep_movie = False
+                elif clean_line.startswith(("http://", "https://")):
+                    result.append(clean_line)
+                    
+            print(f"Sucesso! Foram importados {movies_count} filmes do seu servidor privado.")
+            movies_downloaded = True
             
-    print(f"Filmes processados! Foram adicionados {movies_count} filmes encontrados.")
+    except requests.exceptions.RequestException:
+        continue
 
-except requests.exceptions.RequestException as e:
-    print(f"Erro ao acessar o servidor de filmes: {e}")
+if not movies_downloaded:
+    print("Aviso: Não foi possível extrair os filmes. Verifique se o servidor está online ou se as credenciais expiraram.")
 
 
 # ==========================================
