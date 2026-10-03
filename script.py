@@ -1,15 +1,15 @@
 import requests
 
 # 1. Configurações da Lista 1 (Canais)
-SOURCE_TV = "https://cr7v.short.gy/TV"
+SOURCE_TV = "https://short.gy"
 REMOVE_TV = [
     "novelas", "pluto tv", "pluto series", "manotv", 
     "quer um test chama", "doação pix", "atualizado", 
     "hallo", "música", "rádios", "pluto", "internacional", "novelas turca"
 ]
 
-# 2. Configurações da Lista 2 (Apenas Filmes do seu Servidor Privado)
-# Montamos a URL usando o seu Link, Usuário e Senha fornecidos
+# 2. Configurações da Lista 2 (Servidor Privado - Forçando apenas Filmes via API)
+# Testamos sem a porta :8080 e adicionamos '&type=movie' para o servidor entregar direto os filmes
 SOURCE_MOVIES = "http://jphdear.net"
 
 OUTPUT = "lista.m3u"
@@ -19,7 +19,6 @@ headers = {
 }
 
 result = []
-# Cabeçalho limpo com links de guias de programação (EPG) reais
 EPG_LIMPO = '#EXTM3U url-tvg="https://githubusercontent.com"'
 result.append(EPG_LIMPO)
 
@@ -51,15 +50,14 @@ try:
             if not skip and clean_line.startswith("#"):
                 result.append(clean_line)
                 
-    print(f"Canais processados. Total parcial no arquivo: {len(result)}")
+    print(f"Canais processados com sucesso. Total parcial: {len(result)} linhas.")
 
 except requests.exceptions.RequestException as e:
     print(f"Erro ao baixar a lista de canais: {e}")
-    # Não encerra o programa se a primeira falhar, tenta buscar os filmes
 
 
 # ==========================================
-# PARTE 2: EXTRAINDO SÓ FILMES (LISTA 2)
+# PARTE 2: EXTRAINDO OS FILMES (LISTA 2)
 # ==========================================
 try:
     print(f"Buscando filmes do servidor privado...")
@@ -76,24 +74,30 @@ try:
             continue
             
         if clean_line.startswith("#EXTINF:"):
-            # Analisa se pertence estritamente ao grupo de Filmes
-            # Filtra pela tag group-title="FILMES" baseada no arquivo fornecido
-            if 'group-title="filmes"' in clean_line.lower():
+            info_lower = clean_line.lower()
+            # Filtro inteligente: captura se tiver "group-title" contendo "film" ou se a API já trouxe filtrado
+            if 'group-title=' in info_lower:
+                if 'filme' in info_lower or 'film' in info_lower or 'movie' in info_lower:
+                    keep_movie = True
+                    result.append(clean_line)
+                    movies_count += 1
+                else:
+                    keep_movie = False
+            else:
+                # Se o servidor enviou sem a tag group-title (mas já filtrado por conta do type=movie)
                 keep_movie = True
                 result.append(clean_line)
                 movies_count += 1
-            else:
-                keep_movie = False
                 
-        elif clean_line.startswith(("http://", "https://")):
+        elif clean_line.startswith(("http://", "https://", "rtmp://")):
             if keep_movie:
                 result.append(clean_line)
             keep_movie = False
             
-    print(f"Filmes processados com sucesso! Foram adicionados {movies_count} filmes.")
+    print(f"Filmes processados! Foram adicionados {movies_count} filmes encontrados.")
 
 except requests.exceptions.RequestException as e:
-    print(f"Erro ao baixar a lista de filmes: {e}")
+    print(f"Erro ao acessar o servidor de filmes: {e}")
 
 
 # ==========================================
@@ -102,5 +106,5 @@ except requests.exceptions.RequestException as e:
 with open(OUTPUT, "w", encoding="utf-8") as f:
     f.write("\n".join(result) + "\n")
 
-print(f"\nLista unificada gerada com sucesso!")
-print(f"Arquivo final salvo em: '{OUTPUT}' com um total de {len(result)} linhas.")
+print(f"\nProcesso concluído!")
+print(f"Arquivo final '{OUTPUT}' gerado com {len(result)} linhas no total.")
